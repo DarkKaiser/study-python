@@ -5,9 +5,9 @@ cap = cv2.VideoCapture("video.mp4")
 # 코덱 정의
 fourcc = cv2.VideoWriter_fourcc(*"DIVX")
 
+fps = cap.get(cv2.CAP_PROP_FPS)
 width = round(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 height = round(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-fps = cap.get(cv2.CAP_PROP_FPS)
 
 out = cv2.VideoWriter("output.avi", fourcc, fps, (width, height))
 
