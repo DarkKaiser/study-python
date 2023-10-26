@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread("img.jpg")
+img = cv2.imread("ImageWorkspace/OpenCV/img.jpg")
 dst1 = cv2.resize(img, (400, 500))              # Width, Height 크기 고정
 dst2 = cv2.resize(img, None, fx=0.5, fy=0.5)    # x, y 비율 정의(0.5배로 축소)
 # 보간법을 활용한 x, y 비율 정의(0.5배로 축소)

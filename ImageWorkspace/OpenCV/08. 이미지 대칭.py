@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread("img.jpg")
+img = cv2.imread("ImageWorkspace/OpenCV/img.jpg")
 
 # 좌우대칭
 flip_horizontal = cv2.flip(img, flipCode=1)  # flipCode > 0 : 좌우대칭

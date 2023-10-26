@@ -7,7 +7,7 @@ drawing = False # 선을 그릴지 여부
 
 point_list = []
 
-img = cv2.imread("poker.jpg")
+img = cv2.imread("ImageWorkspace/OpenCV/poker.jpg")
 
 def mouse_handler(event, x, y, flags, param):
     global drawing

@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread("img.jpg")
+img = cv2.imread("ImageWorkspace/OpenCV/img.jpg")
 
 # 시계 방향으로 90도 회전
 roate_90 = cv2.rotate(img, cv2.ROTATE_90_CLOCKWISE)

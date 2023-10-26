@@ -3,7 +3,7 @@ import cv2
 def empty(pos):
     pass
 
-img = cv2.imread("snowman.png")
+img = cv2.imread("ImageWorkspace/OpenCV/snowman.png")
 
 name = "Trackbar"
 cv2.namedWindow(name)

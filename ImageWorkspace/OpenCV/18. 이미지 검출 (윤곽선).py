@@ -2,7 +2,7 @@ import cv2
 
 # 윤곽선 : 경계선을 연결한 선
 
-img = cv2.imread("card.png")
+img = cv2.imread("ImageWorkspace/OpenCV/card.png")
 target_img = img.copy()     # 사본 이미지
 
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)

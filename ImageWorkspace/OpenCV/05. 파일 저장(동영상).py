@@ -1,6 +1,6 @@
 import cv2
 
-cap = cv2.VideoCapture("video.mp4")
+cap = cv2.VideoCapture("ImageWorkspace/OpenCV/video.mp4")
 
 # 코덱 정의
 fourcc = cv2.VideoWriter_fourcc(*"DIVX")

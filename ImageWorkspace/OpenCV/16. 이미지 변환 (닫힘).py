@@ -5,7 +5,7 @@ import numpy as np
 
 kernel = np.ones((3, 3), dtype=np.uint8)
 
-img = cv2.imread("dilate.png", cv2.IMREAD_GRAYSCALE)
+img = cv2.imread("ImageWorkspace/OpenCV/dilate.png", cv2.IMREAD_GRAYSCALE)
 dilate = cv2.dilate(img, kernel=kernel, iterations=2)
 erode = cv2.erode(dilate, kernel=kernel, iterations=2)
 

@@ -18,12 +18,12 @@ mp_face_detection = mp.solutions.face_detection # 얼굴 검출을 위한 face_d
 mp_drawing = mp.solutions.drawing_utils # 얼굴의 특징을 그리기 위한 drawing_utils 모듈을 사용
 
 # 동영상 파일 열기
-cap = cv2.VideoCapture('face_video.mp4')
+cap = cv2.VideoCapture('ImageWorkspace/OpenCV/face_video.mp4')
 
 # 이미지 불러오기
-image_left_eye = cv2.imread('left_eye.png', cv2.IMREAD_UNCHANGED) # 100 x 100
-image_right_eye = cv2.imread('right_eye.png', cv2.IMREAD_UNCHANGED) # 100 x 100
-image_nose = cv2.imread('nose.png', cv2.IMREAD_UNCHANGED) # 300 x 100 (가로, 세로)
+image_left_eye = cv2.imread('ImageWorkspace/OpenCV/left_eye.png', cv2.IMREAD_UNCHANGED) # 100 x 100
+image_right_eye = cv2.imread('ImageWorkspace/OpenCV/right_eye.png', cv2.IMREAD_UNCHANGED) # 100 x 100
+image_nose = cv2.imread('ImageWorkspace/OpenCV/nose.png', cv2.IMREAD_UNCHANGED) # 300 x 100 (가로, 세로)
 
 with mp_face_detection.FaceDetection(model_selection=0, min_detection_confidence=0.7) as face_detection:
     while cap.isOpened():

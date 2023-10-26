@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread("img.jpg")
+img = cv2.imread("ImageWorkspace/OpenCV/img.jpg")
 
 # 불러온 이미지를 흑백으로 변경
 dst = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)

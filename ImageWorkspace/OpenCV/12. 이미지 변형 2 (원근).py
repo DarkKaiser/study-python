@@ -5,7 +5,7 @@ import numpy as np
 # 회전된 이미지 올바로 세우기
 # 
 
-img = cv2.imread("poker.jpg")
+img = cv2.imread("ImageWorkspace/OpenCV/poker.jpg")
 
 width, height = 530, 710    # 가로 크기 530, 세로 크기 710으로 결과물 출력
 

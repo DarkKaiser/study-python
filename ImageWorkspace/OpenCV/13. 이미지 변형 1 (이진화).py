@@ -4,7 +4,7 @@ def empty(pos):
     # print(pos)
     pass
 
-img = cv2.imread("book.jpg", cv2.IMREAD_GRAYSCALE)
+img = cv2.imread("ImageWorkspace/OpenCV/book.jpg", cv2.IMREAD_GRAYSCALE)
 
 name = "Trackbar"
 cv2.namedWindow(name)

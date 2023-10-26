@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread("img.jpg")
+img = cv2.imread("ImageWorkspace/OpenCV/img.jpg")
 
 # 1. 커널 사이즈 변화에 따른 흐림
 kernel_3 = cv2.GaussianBlur(img, ksize=(3, 3), sigmaX=0)

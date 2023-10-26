@@ -5,7 +5,7 @@ import numpy as np
 # 사다리꼴 이미지 펼치기
 # 
 
-img = cv2.imread("newspaper.jpg")
+img = cv2.imread("ImageWorkspace/OpenCV/newspaper.jpg")
 
 width, height = 640, 240    # 가로 크기 640, 세로 크기 240으로 결과물 출력
 

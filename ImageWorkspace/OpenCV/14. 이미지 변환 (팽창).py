@@ -7,7 +7,7 @@ import numpy as np
 
 kernel = np.ones((3, 3), dtype=np.uint8)
 
-img = cv2.imread("dilate.png", cv2.IMREAD_GRAYSCALE)
+img = cv2.imread("ImageWorkspace/OpenCV/dilate.png", cv2.IMREAD_GRAYSCALE)
 dilate1 = cv2.dilate(img, kernel=kernel, iterations=1)  # iterations : 반복횟수
 dilate2 = cv2.dilate(img, kernel=kernel, iterations=2)
 dilate3 = cv2.dilate(img, kernel=kernel, iterations=3)
