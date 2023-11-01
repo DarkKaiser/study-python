@@ -29,7 +29,14 @@ for e in elems:
 
 # HTML 출력
 print(browser.page_source)
-    
+
+# 지정한 위치로 스크롤 내리기
+# 모니터(해상도) 높이인 1080 위치로 스크롤 내리기
+# browser.execute_script("window.scrollTo(0, 1080)")
+
+# 화면 가장 아래로 스크롤 내리기
+# browser.execute_script("window.scrollTo(0, document.body.scrollHeight)")
+
 time.sleep(5)
 
 # browser.close() # 현재 탭만 종료

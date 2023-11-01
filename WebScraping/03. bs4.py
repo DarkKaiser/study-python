@@ -11,6 +11,7 @@ print("Title Text:", soup.title.get_text())
 print(soup.a["href"])
 
 print(soup.find("a", attrs={"class":"topmenu_button"}))
+# print(soup.find("a", attrs={"class":["topmenu_button","xxx_button"]}))    # topmenu_button 또는 xxx_button 클래스를 가진 태그를 찾는다.
 print(soup.find(attrs={"class":"topmenu_button"}))
 
 atag = soup.find(attrs={"class":"topmenu_button"})
