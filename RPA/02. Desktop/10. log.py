@@ -4,7 +4,7 @@ from datetime import datetime
 # logging.basicConfig(level=logging.DEBUG, format="%(asctime)s [%(levelname)s] %(message)s")
 # logging.debug("test")
 
-# 터미널과 파일에 함께 로그 남기기
+# 터미널과 파일에 로그 남기기
 logFormatter = logging.Formatter("%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
@@ -14,6 +14,7 @@ streamHandler = logging.StreamHandler()
 streamHandler.setFormatter(logFormatter)
 logger.addHandler(streamHandler)
 
+# 파일
 filename = datetime.now().strftime("mylogfile_%Y%m%d%H%M%S.log")
 fileHandler = logging.FileHandler(filename, encoding="utf-8")
 fileHandler.setFormatter(logFormatter)
