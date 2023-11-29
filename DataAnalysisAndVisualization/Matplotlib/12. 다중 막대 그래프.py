@@ -5,7 +5,7 @@ import numpy as np
 
 # Matplotlib
 # 다양한 형태의 그래프를 통하여 데이터 시각화를 할 수 있는 라이브러리
-# 11. 누적 막대 그래프
+# 12. 다중 막대 그래프
 
 # 한글 제목 폰트 설정
 matplotlib.rcParams['font.size'] = 15 # 글자 크기
